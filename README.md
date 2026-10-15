@@ -20,7 +20,7 @@ Research Template for Data-Driven Projects
 
 ### 通过 GitHub 创建新项目
 
-如果本仓库已被设置为 GitHub Template Repository：
+本仓库已经设置为 GitHub Template Repository：
 
 1. 点击 `Use this template`。
 2. 输入新项目的仓库名称。
