@@ -12,4 +12,4 @@
 
 ## 与其他目录的关系
 
-这里的代码读取 `data/external/` 或 `configs/local.yaml` 中登记的本机数据位置，把结果写入 `data/processed/` 和 `data/ready/`。分析逻辑属于 [`src/research/`](../research/)。
+这里的代码读取外部输入（例如 `data/external/` 中的外部原始数据），把整理和特征构造的结果写入 `data/processed/` 和 `data/ready/`。
