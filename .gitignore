@@ -12,6 +12,7 @@ configs/local.yaml
 configs/*.local.yaml
 .env
 .env.*
+!.env.example
 
 # 大型数据或本机专用数据
 data/external/*
@@ -29,7 +30,7 @@ outputs/out/*
 tmp/
 temp/
 .tmp/
-out/
+/out/
 logs/
 *.log
 

@@ -40,6 +40,7 @@ Research Template for Data-Driven Projects
 ## 目录结构
 
 ```text
+.agents/      项目级 Agent Skills；供编码 agent 读取的技能说明。
 configs/      本机配置模板；真实本机配置不会提交。
 data/         外部输入、处理中间数据、分析就绪数据和结果素材。
 docs/         数据说明、研究设计和文献笔记。
@@ -63,7 +64,7 @@ tests/        用于检查可复用代码的测试。
 uv sync
 ```
 
-`uv sync` 只负责准备项目环境，不代表已经运行了研究流程。实际项目应在有可运行代码后，在本 README 或相关脚本中补充具体运行顺序。
+`uv sync` 只负责准备项目环境，不代表已经运行了研究流程。它会把 `.venv` 精确对齐到 `uv.lock`：添加分析依赖请使用 `uv add pandas`，直接 `pip install` 进 `.venv` 的包会在下一次 `uv sync` 时被移除。实际项目应在有可运行代码后，在本 README 或相关脚本中补充具体运行顺序。
 
 常用检查命令：
 
@@ -89,6 +90,8 @@ uv run ruff check .
 - `outputs/out/` 中可以重新生成的编译产物。
 
 私有数据不应因为仓库是私有的就直接提交；公开模板尤其不能包含个人路径、账号信息或真实研究数据。
+
+确实需要提交某个被忽略的小型文件时，用 `git add -f <路径>` 显式加入，并在 `docs/data/` 说明理由。`data/results/` 默认提交，但单个文件超过约 1 MB 时（高分辨率图像、大型表格片段）应先确认它是否真的需要进入 Git。
 
 ## 参与项目
 
