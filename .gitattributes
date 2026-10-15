@@ -1,0 +1,19 @@
+# Text files: store LF in the repository regardless of each contributor's
+# core.autocrlf setting, and keep LF in working copies so Windows and Linux
+# checkouts stay identical (.tex, .md, .py, .yaml, .csv, ...).
+* text=auto eol=lf
+
+# Windows batch runners need CRLF.
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Research assets: never normalize line endings, never show as text diffs.
+*.pdf     binary
+*.png     binary
+*.jpg     binary
+*.jpeg    binary
+*.eps     binary
+*.parquet binary
+*.dta     binary
+*.xlsx    binary
+*.zip     binary
