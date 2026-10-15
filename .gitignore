@@ -18,11 +18,8 @@ data/external/*
 data/processed/*
 data/ready/*
 !data/external/README.md
-!data/external/.gitkeep
 !data/processed/README.md
-!data/processed/.gitkeep
 !data/ready/README.md
-!data/ready/.gitkeep
 
 # LaTeX 编译产物
 outputs/out/*
