@@ -1,0 +1,43 @@
+# Python 环境和缓存
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.pyright/
+
+# 本地配置和凭据
+configs/local.yaml
+configs/*.local.yaml
+.env
+.env.*
+
+# 大型数据或本机专用数据
+data/external/*
+data/processed/*
+data/ready/*
+!data/external/README.md
+!data/external/.gitkeep
+!data/processed/README.md
+!data/processed/.gitkeep
+!data/ready/README.md
+!data/ready/.gitkeep
+
+# LaTeX 编译产物
+outputs/out/*
+!outputs/out/.gitkeep
+
+# 临时文件和探索性输出
+tmp/
+temp/
+.tmp/
+out/
+logs/
+*.log
+
+# 操作系统和编辑器生成文件
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

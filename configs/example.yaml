@@ -1,0 +1,20 @@
+# 复制本文件为 configs/local.yaml，并为每台机器修改对应路径。
+# configs/local.yaml 会被 Git 忽略。
+
+profile: local
+
+paths:
+  # 原始数据或受限访问数据的位置。不要提交真实敏感路径。
+  raw_data_root: "/path/to/raw/data"
+
+  # 小型外部参考资料或手工管理输入。
+  external_data_root: "data/external"
+
+  # 生成的分析就绪数据。
+  processed_data_root: "data/processed"
+
+  # 表格、图、诊断和其他研究输出。
+  results_root: "data/results"
+
+outputs:
+  canonical_format: "parquet"
