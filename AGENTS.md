@@ -8,7 +8,7 @@
 - 正式可复用逻辑放在 `src/` 下；`scripts/` 只用于探索性或一次性工作。
 - 使用 `uv` 管理 Python 3.12 环境。
 - 原始数据、受限访问数据、本机专用路径、日志和大型缓存不进入 Git。
-- 本机专用路径（数据根目录、外部数据位置等）写在被 Git 忽略的 `configs/local.yaml` 中；`configs/` 下提交的示例文件只说明字段形式，不包含真实路径。
+- 本机名称等写在被 Git 忽略的 `configs/local.yaml` 中；`configs/` 下提交的示例文件只说明字段形式。
 - 默认提交 `data/results/` 中的结果素材和 `outputs/` 根目录中的 LaTeX 包装器。
 - `outputs/out/` 是可重新生成的 LaTeX 编译目录，默认不提交。
 
@@ -26,7 +26,7 @@
 - `src/research/`：研究分析和结果汇总逻辑。
 - `src/utils/`：配置、路径、I/O 和校验等共享辅助代码。
 - `tests/`：针对可复用代码的测试。
-- `.agents/skills/`：项目级 Agent Skills 目录，供 pi 等编码 agent 读取本项目专用的技能说明。
+- `.agents/skills/`：项目级 Agent Skills 目录，供 Pi 等编程 agent 读取本项目专用的技能说明。
 
 ## 运行方式
 

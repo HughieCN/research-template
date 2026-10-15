@@ -40,7 +40,7 @@ Research Template for Data-Driven Projects
 ## 目录结构
 
 ```text
-.agents/      项目级 Agent Skills；供编码 agent 读取的技能说明。
+.agents/      项目级 Agent Skills；供编程 agent 读取的技能说明。
 configs/      本机配置模板；真实本机配置不会提交。
 data/         外部输入、处理中间数据、分析就绪数据和结果素材。
 docs/         数据说明、研究设计和文献笔记。
